@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;515;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;562;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <title>Aero</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/media-queries.css" />
+  </head>
+  <body>
+    <!--================ Header Top Area Start =================-->
+    <section class="header-top">
+      <div class="container-back">
+        <header class="collapse" id="navbarSupportedContent">
+          <div class="logoImg"><img src="Images/logo.png" /></div>
+          <div class="logoImgMedia"><img src="Images/logo1.png" /></div>
+
+          <div class="menuImg">
+            <ul class="menu_nav">
+              <li class="nav-item">
+                <a class="nav-link" href="Home.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="Packages.html">Packages</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="Flights.html">Flights</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="Trains.html">Trains</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="Reach.html">Reach us</a>
+              </li>
+            </ul>
+          </div>
+
+          <!--================menu burger =================-->
+          <!--    Made by Erik Terwan    -->
+          <!--   24th of November 2015   -->
+          <!--        MIT License        -->
+          <nav role="navigation">
+            <div id="menuToggle" class="menuToggle">
+              <!--
+    A fake / hidden checkbox is used as click reciever,
+    so you can use the :checked selector on it.
+    -->
+              <input type="checkbox" />
+
+              <!--
+    Some spans to act as a hamburger.
+    
+    They are acting like a real hamburger,
+    not that McDonalds stuff.
+    -->
+              <span></span>
+              <span></span>
+              <span></span>
+
+              <!--
+    Too bad the menu has to be inside of the button
+    but hey, it's pure CSS magic.
+    -->
+              <ul id="menu">
+                <li class="nav-item">
+                  <a class="nav-link" href="Home.html">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="Packages.html">Packages</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="Flights.html">Flights</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="Trains.html">Trains</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="Reach.html">Reach us</a>
+                </li>
+              </ul>
+            </div>
+          </nav>
+          <!--================form =================-->
+          <div class="bannerAero"><img src="Images/banner_slider1.png" /></div>
+          <div class="formCloud">
+            <div class="half-width">
+              <img class="ladderImg" src="Images/ladder.png" />
+              <span class="OnlineBooking">Online Booking</span>
+              <form
+                class="formAero"
+                action="https://echo.htmlacademy.ru"
+                method="post"
+              >
+                <div>
+                  <label for="login-field">Name:</label>
+                  <input type="text" name="login" id="login-field" />
+                </div>
+                <div>
+                  <label for="password-field">email:</label>
+                  <input type="password" name="password" id="password-field" />
+                </div>
+                <div>
+                  <label for="password-field">Package:</label>
+                  <select name="year">
+                    <option class="option" value="Africa"
+                      >Africa Packages</option
+                    >
+                    <option class="option" value="Russia"
+                      >Russia Packages</option
+                    >
+                  </select>
+                </div>
+                <div>
+                  <label for="comment-field">massage:</label>
+                  <textarea
+                    name="comment"
+                    id="comment-field"
+                    rows="3"
+                  ></textarea>
+                </div>
+
+                <input class="bottomSub" type="submit" value="Submit" />
+              </form>
+            </div>
+          </div>
+
+          <div class="cloudWhite"><img src="Images/cloud-2.png" /></div>
+        </header>
+        <div class="cloudBlue">
+          <div class="OurSpecial">
+            <div class="OurSpecialBorder">
+              <h3>Our special offers</h3>
+              <div class="OurSpecialImg"><img src="Images/Layer-19.png" /></div>
+              <h4>1914 translation</h4>
+              <p>
+                But I must explain to you how all this<br />
+                mistaken idea of denouncing pleasure
+              </p>
+
+              <span class="price">700$</span>
+              <input class="bottomSub" type="submit" value="Read more" />
+            </div>
+            <div class="OurSpecialBottom">
+              <div class="OurSpecialImg">
+                <img src="Images/Layer-19-copy.png" />
+              </div>
+              <h4>1914 translation</h4>
+              <p>
+                But I must explain to you how all this<br />
+                mistaken idea of denouncing pleasure
+              </p>
+              <span class="price">700$</span>
+              <input class="bottomSub" type="submit" value="Read more" />
+            </div>
+          </div>
+          <div class="tours">
+            <div class="toursHead">
+              <div class="toursHead__button">
+                <input class="tours__button" type="submit" value="TOURS" />
+                <input class="photos__button" type="submit" value="PHOTOS" />
+              </div>
+
+              <img class="summerIcon" src="Images/special-summer.png" />
+            </div>
+            <div class="toursText">
+              <table class="toursIcon">
+                <tr>
+                  <td>
+                    <img src="Images/arrow.png" />Ipsum is simply dummy text
+                    simply
+                  </td>
+                  <td>10 Days</td>
+                  <td>more details</td>
+                </tr>
+                <tr>
+                  <td>
+                    <img src="Images/arrow.png" />Printing and typesetting
+                    industry typesetting
+                  </td>
+                  <td>10 Days</td>
+                  <td>more details</td>
+                </tr>
+                <tr>
+                  <td>
+                    <img src="Images/arrow.png" />Has been the industry's
+                    standard
+                  </td>
+                  <td>11 Days</td>
+                  <td>more details</td>
+                </tr>
+                <tr>
+                  <td>
+                    <img src="Images/arrow.png" />Dummy text ever since the
+                    1500s Ipsum is simpl
+                  </td>
+                  <td>22 Days</td>
+                  <td>more details</td>
+                </tr>
+                <tr>
+                  <td>
+                    <img src="Images/arrow.png" />Lorem Ipsum is simply dummy
+                    text simply
+                  </td>
+                  <td>13 Days</td>
+                  <td>more details</td>
+                </tr>
+                <tr>
+                  <td>
+                    <img src="Images/arrow.png" />Printing and typesetting
+                    industry Printing
+                  </td>
+                  <td>17 Days</td>
+                  <td>more details</td>
+                </tr>
+                <tr>
+                  <td>
+                    <img src="Images/arrow.png" />Has been the industry's
+                    standard
+                  </td>
+                  <td>19 Days</td>
+                  <td>more details</td>
+                </tr>
+                <tr>
+                  <td>
+                    <img src="Images/arrow.png" />Dummy text ever since the the
+                    industry
+                  </td>
+                  <td>16 Days</td>
+                  <td>more details</td>
+                </tr>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="mapContainer">
+      <h2>Find Tourist Spots by Map</h2>
+      <h3>Click on map</h3>
+    </div>
+
+    <script src="/js/up-burger.js"></script>
+  </body>
+  <footer>
+    <div class="containerFoot">
+      <div class="newsletter">
+        <h2>News letter</h2>
+        <input
+          type="text"
+          name="login"
+          id="login-foot"
+          placeholder="enter email address"
+        />
+        <input class="Subscribe" type="submit" value="Subscribe" />
+        <h2>Social media</h2>
+      </div>
+      <div class="contact"><h2>Contact us</h2></div>
+      <div class="contactForm"><h2>Contact form</h2></div>
+    </div>
+    <div class="CopyrightFoot">
+      © Copyright 2013 cssauthor.com, All Rights Reserved Designed and Developed
+      By cssauthor.com
+    </div>
+  </footer>
+</html>
