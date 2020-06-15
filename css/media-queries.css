@@ -1,6 +1,5 @@
 @media screen and (max-width: 1290px) {
   .OurSpecial {
-    width: 35%;
   }
   .OurSpecialBorder {
     border: 0;
@@ -8,13 +7,11 @@
 }
 @media screen and (max-width: 1060px) {
   .OurSpecial {
-    top: 120%;
     width: 55%;
     left: 30%;
     color: #000;
   }
   .tours {
-    top: 65%;
     right: 25%;
   }
   .container-back {
@@ -31,9 +28,6 @@
     left: 55%;
     top: 15%;
   }
-  .OurSpecial {
-    top: 115%;
-  }
 }
 @media (max-width: 810px) {
   html {
@@ -43,36 +37,26 @@
     height: 1080px;
   }
   .bannerAero {
-    position: absolute;
-    top: 10%;
-    left: 13%;
-    width: 50%;
-    z-index: 4;
+    display: none;
   }
   .half-width {
     position: absolute;
     z-index: 3;
     left: 30%;
-    top: 33%;
+    top: 10%;
     width: 40%;
   }
 
   .cloudWhite {
-    top: 50%;
-  }
-
-  .cloudBlue {
-    top: 75%;
+    display: none;
   }
 
   .tours {
-    top: 125%;
     width: 80%;
     left: 10%;
     color: #000;
   }
   .OurSpecial {
-    top: 89%;
     left: 10%;
     width: 90%;
     color: white;
@@ -228,14 +212,10 @@
     height: 1390px;
   }
   .half-width {
-    width: 260px;
-    top: 30%;
+    width: 50%;
   }
-  .tours {
-    top: 150%;
-  }
+
   .OurSpecial {
-    top: 113%;
     width: 80%;
     color: black;
   }
@@ -251,16 +231,8 @@
     height: 1300px;
   }
   .half-width {
-    position: static;
-    margin: 43% auto;
-    z-index: 7;
-    height: 300px;
-  }
-  .cloudWhite {
-    top: 0;
-  }
-  .cloudBlue {
-    top: 5%;
+    width: 80%;
+    left: 10%;
   }
   .logoImg {
     top: 50%;
