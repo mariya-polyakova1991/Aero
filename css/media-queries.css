@@ -1,19 +1,14 @@
-@media screen and (max-width: 1290px) {
-  .OurSpecial {
+@media screen and (min-width: 1500px) {
+  body {
+    font-size: 18px;
   }
-  .OurSpecialBorder {
-    border: 0;
+  .mapAfrica {
+    top: 46%;
+    left: 44%;
   }
 }
+
 @media screen and (max-width: 1060px) {
-  .OurSpecial {
-    width: 55%;
-    left: 30%;
-    color: #000;
-  }
-  .tours {
-    right: 25%;
-  }
   .container-back {
     height: 1050px;
   }
@@ -28,6 +23,9 @@
     left: 55%;
     top: 15%;
   }
+  .OnlineBooking {
+    font-size: 1.5rem;
+  }
 }
 @media (max-width: 810px) {
   html {
@@ -37,7 +35,9 @@
     height: 1080px;
   }
   .bannerAero {
-    display: none;
+    top: 3%;
+    left: 60%;
+    width: 40%;
   }
   .half-width {
     position: absolute;
@@ -46,27 +46,10 @@
     top: 10%;
     width: 40%;
   }
-
-  .cloudWhite {
-    display: none;
+  .mapContainer {
+    height: 360px;
   }
 
-  .tours {
-    width: 80%;
-    left: 10%;
-    color: #000;
-  }
-  .OurSpecial {
-    left: 10%;
-    width: 90%;
-    color: white;
-  }
-  .OurSpecialBorder {
-    float: left;
-  }
-  .OurSpecialBottom {
-    margin-top: 35px;
-  }
   /* <!--================menu burger =================--> */
   /*
  * Made by Erik Terwan
@@ -214,17 +197,6 @@
   .half-width {
     width: 50%;
   }
-
-  .OurSpecial {
-    width: 80%;
-    color: black;
-  }
-  .OurSpecialBorder {
-    float: none;
-  }
-  .OurSpecialBottom {
-    margin-top: 0;
-  }
 }
 @media (max-width: 510px) {
   .container-back {
@@ -237,15 +209,12 @@
   .logoImg {
     top: 50%;
   }
-  .tours {
-    top: 130%;
+  .bannerAero {
+    left: 15%;
+    width: 65%;
+    top: 1%;
   }
-  .OurSpecial {
-    top: 83%;
-  }
-  .ladderImg {
-    display: none;
-  }
+
   .logoImg {
     display: none;
   }
@@ -256,29 +225,3 @@
     background: none;
   }
 }
-
-@media (max-width: 450px) {
-}
-/* @media (max-width: 450px) {
-  .menu_nav {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-  }
-
-  .menu_nav a {
-    padding: 20px 20px;
-    margin: 0 auto;
-    border-right: none;
-  }
-  .menu_nav a:hover {
-    transition: all 0.2s linear;
-    color: rgb(109, 109, 131);
-    border-right: 0;
-  }
-}
-@media (max-width: 300px) {
-  .table {
-    overflow: scroll;
-  }
-} */

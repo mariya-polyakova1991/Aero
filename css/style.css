@@ -1,23 +1,3 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-a {
-  text-decoration: none;
-  font-weight: bold;
-}
-
-body {
-  font-size: 14px;
-  font-family: "Quicksand", sans-serif;
-  background-color: #d6e6ef;
-  color: white;
-}
-img {
-  width: 100%;
-}
-
 .header-top {
   width: 100%;
 }
@@ -29,6 +9,7 @@ img {
   background-repeat: no-repeat;
   background-size: cover;
 }
+
 .logoImg {
   z-index: 2;
   position: absolute;
@@ -41,8 +22,8 @@ img {
   z-index: 2;
   position: absolute;
   top: 0;
-  width: 20%;
-  right: 15%;
+  width: 30%;
+  right: 0;
 }
 .backImg {
   z-index: 1;
@@ -64,7 +45,7 @@ img {
   width: 54%;
   position: absolute;
   left: 35%;
-  top: 3%;
+  top: 2%;
   z-index: 5;
 }
 .menu_nav li a {
@@ -89,13 +70,18 @@ img {
   top: 40%;
   width: 100%;
   z-index: 1;
+  background-image: url("../Images/cloud-2.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 180px 0 20px;
+  height: 60%;
 }
 
 .cloudBlue {
   position: absolute;
   bottom: 0;
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   flex-wrap: wrap;
   width: 100%;
   z-index: 3;
@@ -120,21 +106,41 @@ img {
   z-index: 3;
   left: 64%;
   top: 15%;
-  width: 300px;
+  width: 340px;
   border: 4px solid #7ebee0;
   border-radius: 10px;
   background-color: #299fca;
   padding: 10px;
-  height: 450px;
+  height: 500px;
 }
-.OnlineBooking {
+.OnlineBookingLabel {
   font-size: 1.25rem;
   font-weight: bold;
-  padding: 2px 40px 2px 15px;
+  padding: 5px 30px 2px 35px;
   margin-left: -25px;
-  background-color: #ded90e;
-  border-radius: 5px 0 0 5px;
+  white-space: nowrap;
+  display: block;
 }
+.OnlineBookingBack {
+  background-color: #ded90e;
+  height: 40px;
+  width: 80%;
+  left: -20px;
+  border-radius: 5px 0 0 5px;
+  position: relative;
+}
+.OnlineBookingBack::after {
+  position: absolute;
+  content: "";
+  top: 0;
+  right: 0;
+  border: 20px solid #299fca;
+  border-left-width: 0;
+  border-left-color: transparent;
+  border-top-color: transparent;
+  border-bottom-color: transparent;
+}
+
 .ladderImg {
   position: absolute;
   z-index: 2;
@@ -151,32 +157,46 @@ img {
 }
 input,
 textarea,
-select {
+select,
+.bottomSub {
+  color: #127ea5;
   vertical-align: middle;
   border: 2px solid #7ebee0;
   border-radius: 5px;
   resize: none;
   cursor: pointer;
   padding: 4px;
-
   margin: 7px;
 }
 .bottomSub {
   background-color: #f9ed06;
   width: 70px;
   color: #299fca;
+  width: 80px;
+}
+input:hover,
+textarea:hover,
+select:hover {
+  background-color: #b7eafc;
+}
+.bottomSub:hover {
+  background-color: gold;
 }
 .option {
   color: #299fca;
 }
 .OurSpecial {
-  /* position: absolute;
-  top: 78%;
-  left: 10%;
-  width: 25%;
-  z-index: 8; */
   min-width: 380px;
   padding: 0 10px;
+}
+.SpecialInner {
+  display: flex;
+  padding-top: 100px;
+  width: 80%;
+  justify-content: space-around;
+}
+.OurSpecialInner {
+  margin-right: 10px;
 }
 .OurSpecial h3,
 .price {
@@ -194,9 +214,6 @@ select {
   margin-bottom: 25px;
 }
 
-.OurSpecial input {
-  width: 80px;
-}
 .tours {
   /* position: absolute;
   top: 78%;
@@ -218,17 +235,19 @@ select {
   margin-bottom: 20px;
 }
 
-.toursHead__button input {
-  width: 100px;
+.toursHead__button button {
+  font-size: 1.3rem;
+  padding: 5px 10px 0;
+  width: 130px;
   margin-bottom: 0;
   border: 0;
   border-radius: 10px 10px 0 0;
 }
-.photos__button {
+.bottomPhotos {
   background-color: #299fca;
   color: #81ffff;
 }
-.tours__button {
+.bottomTours {
   background-color: #81ffff;
   color: #299fca;
   margin-left: 0;
@@ -237,11 +256,29 @@ select {
   padding-right: 20px;
 }
 .mapContainer {
+  background-position: center;
   width: 100%;
-  height: 700px;
-  background-size: 100%;
-  background-image: url("../Images/map-doted.png");
+  height: 658px;
+  background-size: contain;
+  background-image: url(../Images/map-doted1.png);
   background-repeat: no-repeat;
+  position: relative;
+}
+.mapAfrica {
+  position: absolute;
+  width: 14.5%;
+  top: 47.5%;
+  left: 43.3%;
+  max-width: 220px;
+  background-size: contain;
+}
+.africa {
+  display: none;
+  z-index: 40;
+  position: absolute;
+  width: 25%;
+  top: 43%;
+  left: 27%;
 }
 .mapContainer h3,
 .mapContainer h2 {
@@ -253,4 +290,66 @@ select {
 }
 .containerFoot {
   z-index: 30;
+  display: flex;
+  justify-content: space-around;
+  padding-top: 20px;
+  flex-wrap: wrap;
+}
+footer {
+  width: 100%;
+  background-color: #127fa6;
+}
+.iconFoot {
+  background-color: #3bb3de;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  text-align: center;
+  padding: 10px;
+  margin: 10px;
+  color: #9bd8ee;
+  font-size: large;
+}
+.iconFoots {
+  display: flex;
+}
+.containerFoot input,
+.containerFoot textarea,
+.containerFoot select {
+  background-color: #0f6686;
+  color: white;
+  margin-left: 0;
+  border: none;
+}
+.containerFoot input {
+  height: 35px;
+}
+.contactForm {
+  display: flex;
+  flex-direction: column;
+}
+.CopyrightFoot {
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+}
+.containerFoot input:hover,
+.containerFoot textarea:hover,
+.containerFoot select:hover {
+  transition: all 0.2s linear;
+  border-color: unset;
+  background-color: #b7eafc;
+}
+.buttomFoot {
+  padding: 5px;
+  background-color: #d6e6ef;
+  color: #1584ad;
+  border-color: initial;
+  border-radius: 10px;
+  width: 110px;
+  font-size: 1.25rem;
+  margin-top: 10px;
+}
+.buttomFoot:hover {
+  background-color: #accde0;
 }

@@ -1,0 +1,36 @@
+.container {
+  max-width: 1920px;
+  width: 100%;
+  margin: auto;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+a {
+  text-decoration: none;
+  font-weight: bold;
+}
+input:hover,
+textarea:hover,
+select:hover {
+  transition: all 0.2s linear;
+  border-color: unset;
+}
+input:focus,
+textarea:focus,
+select:focus {
+  outline: none;
+}
+
+body {
+  font-size: 14px;
+  font-family: "Quicksand", sans-serif;
+  background-color: #d6e6ef;
+  color: white;
+}
+img {
+  width: 100%;
+}

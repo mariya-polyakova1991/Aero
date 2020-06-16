@@ -17,12 +17,13 @@
     ></script>
     <title>Aero</title>
     <link rel="stylesheet" href="css/style.css" />
-    <link rel="stylesheet" href="css/common.css" />
     <link rel="stylesheet" href="css/media-queries.css" />
+    <link rel="stylesheet" href="css/common.css" />
+
   </head>
   <body>
     <!--================ Header Top Area Start =================-->
-    <section class="container header-top">
+    <section class="header-top">
       <div class="container-back">
         <header class="collapse" id="navbarSupportedContent">
           <div class="logoImg"><img src="Images/logo.png" /></div>
@@ -93,60 +94,14 @@
               </ul>
             </div>
           </nav>
-          <!--================form =================-->
-          <div class="bannerAero"><img src="Images/banner_slider1.png" /></div>
-          <div class="formCloud">
-            <div class="half-width">
-              <img class="ladderImg" src="Images/ladder.png" />
-              <div class="OnlineBookingBack">
-                <span class="OnlineBookingLabel">Online Booking</span>
-              </div>
-              <form
-                class="formAero"
-                action="https://echo.htmlacademy.ru"
-                method="post"
-              >
-                <div>
-                  <label for="login-field">Name:</label>
-                  <input type="text" name="login" id="login-field" />
-                </div>
-                <div>
-                  <label for="password-field">email:</label>
-                  <input type="password" name="password" id="password-field" />
-                </div>
-                <div>
-                  <label for="password-field">Package:</label>
-                  <select name="year">
-                    <option class="option" value="Africa"
-                      >Africa Packages</option
-                    >
-                    <option class="option" value="Russia"
-                      >Russia Packages</option
-                    >
-                  </select>
-                </div>
-                <div>
-                  <label for="comment-field">massage:</label>
-                  <textarea
-                    name="comment"
-                    id="comment-field"
-                    rows="3"
-                  ></textarea>
-                </div>
-
-                <button class="bottomSub">Submit</button>
-              </form>
-            </div>
-          </div>
         </header>
         <div class="cloudWhite">
           <!-- <img src="Images/cloud-21.png" /> -->
         </div>
 
         <div class="cloudBlue">
-          <div class="OurSpecial">
-            <div class="OurSpecialBorder">
-              <h3>Our special offers</h3>
+          <div class="OurSpecial SpecialInner">
+            <div class="OurSpecialInner">
               <div class="OurSpecialImg"><img src="Images/Layer-19.png" /></div>
               <h4>1914 translation</h4>
               <p>
@@ -155,9 +110,9 @@
               </p>
 
               <span class="price">700$</span>
-              <button class="bottomSub">Read more</button>
+              <input class="bottomSub" type="submit" value="Read more" />
             </div>
-            <div class="OurSpecialBottom">
+            <div class="OurSpecialInner">
               <div class="OurSpecialImg">
                 <img src="Images/Layer-19-copy.png" />
               </div>
@@ -167,92 +122,28 @@
                 mistaken idea of denouncing pleasure
               </p>
               <span class="price">700$</span>
-              <button class="bottomSub">Read more</button>
+              <input class="bottomSub" type="submit" value="Read more" />
+            </div>
+            <div class="OurSpecialInner">
+              <div class="OurSpecialImg"><img src="Images/Layer-19.png" /></div>
+              <h4>1914 translation</h4>
+              <p>
+                But I must explain to you how all this<br />
+                mistaken idea of denouncing pleasure
+              </p>
+
+              <span class="price">700$</span>
+              <input class="bottomSub" type="submit" value="Read more" />
             </div>
           </div>
-          <div class="tours">
-            <div class="toursHead">
-              <div class="toursHead__button">
-                <button class="bottomTours">TOURS</button>
-                <button class="bottomPhotos">PHOTOS</button>
-              </div>
-
-              <img class="summerIcon" src="Images/special-summer.png" />
-            </div>
-            <div class="toursText">
-              <table class="toursIcon">
-                <tr>
-                  <td>
-                    <img src="Images/arrow.png" />Ipsum is simply dummy text
-                    simply
-                  </td>
-                  <td>10 Days</td>
-                  <td>more details</td>
-                </tr>
-                <tr>
-                  <td>
-                    <img src="Images/arrow.png" />Printing and typesetting
-                    industry typesetting
-                  </td>
-                  <td>10 Days</td>
-                  <td>more details</td>
-                </tr>
-                <tr>
-                  <td>
-                    <img src="Images/arrow.png" />Has been the industry's
-                    standard
-                  </td>
-                  <td>11 Days</td>
-                  <td>more details</td>
-                </tr>
-                <tr>
-                  <td>
-                    <img src="Images/arrow.png" />Dummy text ever since the
-                    1500s Ipsum is simpl
-                  </td>
-                  <td>22 Days</td>
-                  <td>more details</td>
-                </tr>
-                <tr>
-                  <td>
-                    <img src="Images/arrow.png" />Lorem Ipsum is simply dummy
-                    text simply
-                  </td>
-                  <td>13 Days</td>
-                  <td>more details</td>
-                </tr>
-                <tr>
-                  <td>
-                    <img src="Images/arrow.png" />Printing and typesetting
-                    industry Printing
-                  </td>
-                  <td>17 Days</td>
-                  <td>more details</td>
-                </tr>
-                <tr>
-                  <td>
-                    <img src="Images/arrow.png" />Has been the industry's
-                    standard
-                  </td>
-                  <td>19 Days</td>
-                  <td>more details</td>
-                </tr>
-                <tr>
-                  <td>
-                    <img src="Images/arrow.png" />Dummy text ever since the the
-                    industry
-                  </td>
-                  <td>16 Days</td>
-                  <td>more details</td>
-                </tr>
-              </table>
+    
             </div>
           </div>
         </div>
       </div>
     </section>
 
-    <div class="container mapContainer">
+    <div class="mapContainer">
       <h2>Find Tourist Spots by Map</h2>
       <h3>Click on map</h3>
       <div class="mapAfrica"><img src="Images/map-afrrica.png" /></div>
@@ -260,7 +151,7 @@
     </div>
     <script src="/js/up-burger.js"></script>
   </body>
-  <footer class="container">
+  <footer>
     <div class="containerFoot">
       <div class="newsletter">
         <h3>News letter</h3>
@@ -270,8 +161,7 @@
           id="login-foot"
           placeholder="enter email address"
         />
-        <button class="buttomFoot">Subscribe</button>
-
+        <input class="Subscribe" type="submit" value="Subscribe" />
         <h3>Social media</h3>
         <div class="iconFoots">
           <div class="iconFoot">
@@ -313,7 +203,7 @@
           rows="5"
           placeholder="Message"
         ></textarea>
-        <button class="buttomFoot">Submit</button>
+        <input class="Subscribe" type="submit" value="Submit" />
       </div>
     </div>
     <div class="CopyrightFoot">
