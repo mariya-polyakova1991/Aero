@@ -9,6 +9,14 @@
   background-repeat: no-repeat;
   background-size: cover;
 }
+.container-back__inner {
+  height: 490px;
+  position: relative;
+  width: 100%;
+  background-image: url("../Images/bg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
 
 .logoImg {
   z-index: 2;
@@ -37,6 +45,9 @@
 .menu_nav {
   display: flex;
   justify-content: space-between;
+}
+.menu_nav a:hover {
+  color: #0f6686;
 }
 .menu_nav li {
   display: inline-block;
@@ -68,6 +79,17 @@
 .cloudWhite {
   position: absolute;
   top: 40%;
+  width: 100%;
+  z-index: 1;
+  background-image: url("../Images/cloud-2.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 180px 0 20px;
+  height: 60%;
+}
+.cloudWhite__inner {
+  top: 10%;
+  position: absolute;
   width: 100%;
   z-index: 1;
   background-image: url("../Images/cloud-2.png");
@@ -191,9 +213,10 @@ select:hover {
 }
 .SpecialInner {
   display: flex;
-  padding-top: 100px;
+  padding-top: 20px;
   width: 80%;
   justify-content: space-around;
+  font-size: 1.15rem;
 }
 .OurSpecialInner {
   margin-right: 10px;
@@ -214,12 +237,6 @@ select:hover {
   margin-bottom: 25px;
 }
 
-.tours {
-  /* position: absolute;
-  top: 78%;
-  right: 10%;
-  z-index: 8; */
-}
 .toursIcon img {
   width: 20px;
   padding-right: 10px;
@@ -251,6 +268,14 @@ select:hover {
   background-color: #81ffff;
   color: #299fca;
   margin-left: 0;
+}
+.bottomPhotos:hover {
+  background-color: #299fca8e;
+  color: #81ffff;
+}
+.bottomTours:hover {
+  background-color: #81ffffb7;
+  color: #299fca;
 }
 .toursIcon td {
   padding-right: 20px;
@@ -310,6 +335,9 @@ footer {
   color: #9bd8ee;
   font-size: large;
 }
+.iconFoot:hover {
+  background-color: #0f6686;
+}
 .iconFoots {
   display: flex;
 }
@@ -353,3 +381,58 @@ footer {
 .buttomFoot:hover {
   background-color: #accde0;
 }
+/* inner========================================================== */
+.imgCollection__img {
+  width: 100%;
+  max-width: 250px;
+}
+.imgCollection {
+  display: flex;
+  width: 80%;
+  color: #959595;
+}
+.imgCollection__block {
+  margin: 20px;
+}
+.imgCollectionContainer {
+  display: flex;
+  font-size: 1.15rem;
+}
+
+.imgCollectionContainer h3 {
+  font-family: "Dancing Script", cursive;
+}
+.rightMenu {
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+}
+.destinations {
+  margin: 10px;
+  background-color: #127ea5;
+  padding: 15px 80px 50px 20px;
+  border-radius: 20px;
+}
+.destinations h4 {
+  color: #4cb1bd;
+  background-color: #eadf1b;
+  padding: 10px 10px 10px 30px;
+  border-radius: 10px;
+  margin: 10px 0 10px -30px;
+}
+li {
+  list-style-type: none;
+}
+.imgCollection__bottom {
+  font-size: 1.3rem;
+  padding: 5px;
+  width: 130px;
+margin: 10px 0;  border: 0;
+  border-radius: 10px;
+  background-color: #299fca;
+  color: white;
+}
+
+.imgCollection__bottom:hover {
+  background-color: #299fca8e;
+  color: #81ffff;
