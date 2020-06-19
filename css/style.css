@@ -202,7 +202,7 @@ select:hover {
   background-color: #b7eafc;
 }
 .bottomSub:hover {
-  background-color: gold;
+  background-color: darkslategrey;
 }
 .option {
   color: #299fca;
@@ -269,10 +269,7 @@ select:hover {
   color: #299fca;
   margin-left: 0;
 }
-.bottomPhotos:hover {
-  background-color: #299fca8e;
-  color: #81ffff;
-}
+
 .bottomTours:hover {
   background-color: #81ffffb7;
   color: #299fca;
@@ -297,14 +294,7 @@ select:hover {
   max-width: 220px;
   background-size: contain;
 }
-.africa {
-  display: none;
-  z-index: 40;
-  position: absolute;
-  width: 25%;
-  top: 43%;
-  left: 27%;
-}
+
 .mapContainer h3,
 .mapContainer h2 {
   margin-top: 10px;
@@ -427,7 +417,8 @@ li {
   font-size: 1.3rem;
   padding: 5px;
   width: 130px;
-margin: 10px 0;  border: 0;
+  margin: 10px 0;
+  border: 0;
   border-radius: 10px;
   background-color: #299fca;
   color: white;
@@ -436,3 +427,70 @@ margin: 10px 0;  border: 0;
 .imgCollection__bottom:hover {
   background-color: #299fca8e;
   color: #81ffff;
+}
+
+/* Africa================================================= */
+.africa,
+.contentAfrica {
+  z-index: 40;
+  position: absolute;
+  top: 37%;
+  left: 25%;
+}
+.contentAfrica {
+  color: #b2aaaa;
+  padding: 10px;
+  width: 250px;
+}
+
+.contentAfrica .OurSpecial {
+  flex-direction: column;
+  overflow-y: scroll;
+  font-size: 0.75rem;
+  height: 220px;
+}
+.contentAfrica .SpecialInner {
+  width: 100%;
+}
+.contentAfrica .OurSpecial {
+  min-width: 100px;
+}
+.contentAfrica__header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  padding-top: 10px;
+}
+
+.africa__color {
+  filter: sepia(50%);
+}
+.photo__slider__content {
+  margin: auto;
+}
+.photo__slider__content img {
+  width: 30%;
+}
+.photo__slider {
+  display: none;
+}
+/* slaider================================================== */
+/* JS======================================================= */
+.modal {
+  display: none;
+}
+.modalBlock {
+  display: none;
+}
+.modal--show {
+  display: block;
+}
+.backButtonOpen {
+  background-color: #81ffff;
+  color: #299fca;
+}
+.backButtonClouse {
+  background-color: #299fca;
+  color: #81ffff;
+}

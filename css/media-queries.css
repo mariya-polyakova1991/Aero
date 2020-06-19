@@ -12,6 +12,11 @@
   .container-back {
     height: 1050px;
   }
+  .africa,
+  .contentAfrica {
+    top: 27%;
+    left: 12%;
+  }
 }
 
 @media screen and (max-width: 1000px) {
@@ -25,6 +30,9 @@
   }
   .OnlineBooking {
     font-size: 1.5rem;
+  }
+  .contentAfrica .OurSpecial {
+    font-size: 1rem;
   }
 }
 @media (max-width: 810px) {
@@ -58,6 +66,17 @@
   .rightMenu {
     display: flex;
     flex-direction: row;
+  }
+  .africa,
+  .contentAfrica {
+    top: 15%;
+    left: 12%;
+    width: 50%;
+    height: 66%;
+  }
+  .contentAfrica .SpecialInner {
+    width: 70%;
+    height: 100%;
   }
 
   /* <!--================menu burger =================--> */
@@ -220,6 +239,13 @@
   .imgCollection {
     flex-wrap: wrap;
   }
+  .contentAfrica .OurSpecial {
+    flex-direction: row;
+  }
+  .africa,
+  .contentAfrica {
+    height: 45%;
+  }
 }
 @media (max-width: 510px) {
   .container-back {
@@ -251,4 +277,10 @@
     display: flex;
     flex-direction: column;
   }
+  .africa,
+  .contentAfrica {
+    height: 27%;
+  }
+}
+@media (max-width: 460px) {
 }

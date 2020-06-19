@@ -21,8 +21,10 @@ select:hover {
 }
 input:focus,
 textarea:focus,
-select:focus {
+select:focus,
+button:focus {
   outline: none;
+  outline-color: unset;
 }
 
 body {
