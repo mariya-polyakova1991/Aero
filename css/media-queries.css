@@ -283,4 +283,7 @@
   }
 }
 @media (max-width: 460px) {
+  .slider .item {
+    width: 100%;
+  }
 }
