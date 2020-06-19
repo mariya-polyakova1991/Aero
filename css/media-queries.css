@@ -71,7 +71,7 @@
   .contentAfrica {
     top: 15%;
     left: 12%;
-    width: 50%;
+    width: 57%;
     height: 66%;
   }
   .contentAfrica .SpecialInner {
@@ -244,7 +244,10 @@
   }
   .africa,
   .contentAfrica {
-    height: 45%;
+    height: 58%;
+  }
+  .contentAfrica__header {
+    justify-content: right;
   }
 }
 @media (max-width: 510px) {
@@ -279,11 +282,19 @@
   }
   .africa,
   .contentAfrica {
-    height: 27%;
+    height: 50%;
   }
 }
 @media (max-width: 460px) {
   .slider .item {
     width: 100%;
+  }
+  .africa,
+  .contentAfrica {
+    width: 80%;
+    height: 70%;
+  }
+  .contentAfrica {
+    height: 55%;
   }
 }
