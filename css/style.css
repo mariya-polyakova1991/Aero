@@ -209,7 +209,7 @@ select:hover {
 }
 .OurSpecial {
   min-width: 380px;
-  padding: 0 10px;
+  padding: 0 20px;
 }
 .SpecialInner {
   display: flex;
@@ -237,6 +237,9 @@ select:hover {
   margin-bottom: 25px;
 }
 
+.tours {
+  padding: 10px;
+}
 .toursIcon img {
   width: 20px;
   padding-right: 10px;
@@ -309,6 +312,7 @@ select:hover {
   justify-content: space-around;
   padding-top: 20px;
   flex-wrap: wrap;
+  margin: 0 auto;
 }
 footer {
   width: 100%;
