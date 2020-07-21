@@ -18,14 +18,14 @@
   background-size: cover;
 }
 
-.logoImg {
+.logo-img {
   z-index: 2;
   position: absolute;
   top: 0;
   width: 80%;
   left: 10%;
 }
-.logoImgMedia {
+.logo-imgMedia {
   display: none;
   z-index: 2;
   position: absolute;
@@ -42,24 +42,24 @@
   width: 100%;
 }
 
-.menu_nav {
+.menu-nav {
   display: flex;
   justify-content: space-between;
 }
-.menu_nav a:hover {
+.menu-nav a:hover {
   color: #0f6686;
 }
-.menu_nav li {
+.menu-nav li {
   display: inline-block;
 }
-.menuImg {
+.menu-img {
   width: 54%;
   position: absolute;
   left: 35%;
   top: 2%;
   z-index: 5;
 }
-.menu_nav li a {
+.menu-nav li a {
   color: white;
   font-size: 1.5rem;
   padding: 10px;
@@ -76,7 +76,7 @@
   right: 0;
 }
 
-.cloudWhite {
+.cloud-white {
   position: absolute;
   top: 40%;
   width: 100%;
@@ -87,7 +87,7 @@
   padding: 180px 0 20px;
   height: 60%;
 }
-.cloudWhite__inner {
+.cloud-white__inner {
   top: 10%;
   position: absolute;
   width: 100%;
@@ -99,7 +99,7 @@
   height: 60%;
 }
 
-.cloudBlue {
+.cloud-blue {
   position: absolute;
   bottom: 0;
   display: flex;
@@ -113,15 +113,15 @@
   padding: 180px 0 20px;
 }
 
-.cloudBlue img {
+.cloud-blue img {
   max-width: 100%;
 }
-.bannerAero {
+.banner-aero {
   position: absolute;
   top: 20%;
-  left: 13%;
+  left: 10%;
   width: 43%;
-  z-index: 4;
+  z-index: 3;
 }
 .half-width {
   position: absolute;
@@ -135,7 +135,7 @@
   padding: 10px;
   height: 500px;
 }
-.OnlineBookingLabel {
+.online-booking-label {
   font-size: 1.25rem;
   font-weight: bold;
   padding: 5px 30px 2px 35px;
@@ -143,7 +143,7 @@
   white-space: nowrap;
   display: block;
 }
-.OnlineBookingBack {
+.online-booking-back {
   background-color: #ded90e;
   height: 40px;
   width: 80%;
@@ -151,7 +151,7 @@
   border-radius: 5px 0 0 5px;
   position: relative;
 }
-.OnlineBookingBack::after {
+.online-booking-back::after {
   position: absolute;
   content: "";
   top: 0;
@@ -163,7 +163,7 @@
   border-bottom-color: transparent;
 }
 
-.ladderImg {
+.ladder-img {
   position: absolute;
   z-index: 2;
   left: 15%;
@@ -171,7 +171,7 @@
   width: 20%;
 }
 
-.formAero {
+.form-aero {
   display: flex;
   flex-direction: column;
   align-items: flex-end;
@@ -180,7 +180,7 @@
 input,
 textarea,
 select,
-.bottomSub {
+.bottom-sub {
   color: #127ea5;
   vertical-align: middle;
   border: 2px solid #7ebee0;
@@ -190,49 +190,46 @@ select,
   padding: 4px;
   margin: 7px;
 }
-.bottomSub {
+.bottom-sub {
   background-color: #f9ed06;
   width: 70px;
   color: #299fca;
   width: 80px;
 }
-input:hover,
-textarea:hover,
-select:hover {
-  background-color: #b7eafc;
-}
-.bottomSub:hover {
+
+.bottom-sub:hover {
   background-color: darkslategrey;
 }
+
 .option {
   color: #299fca;
 }
-.OurSpecial {
+.our-special {
   min-width: 380px;
   padding: 0 20px;
 }
-.SpecialInner {
+.special-inner {
   display: flex;
   padding-top: 20px;
   width: 80%;
   justify-content: space-around;
   font-size: 1.15rem;
 }
-.OurSpecialInner {
+.our-special-inner {
   margin-right: 10px;
 }
-.OurSpecial h3,
+.our-special h3,
 .price {
   margin-bottom: 10px;
   font-family: "Dancing Script", cursive;
   font-size: 1.75rem;
 }
-.OurSpecialImg {
+.our-special-img {
   width: 70px;
   float: left;
   margin-right: 5px;
 }
-.OurSpecialBorder {
+.our-special-border {
   border-bottom: 1px dashed white;
   margin-bottom: 25px;
 }
@@ -240,14 +237,14 @@ select:hover {
 .tours {
   padding: 10px;
 }
-.toursIcon img {
+.tours-icon img {
   width: 20px;
   padding-right: 10px;
 }
-.summerIcon {
+.summer-icon {
   width: 25%;
 }
-.toursHead {
+.tours-head {
   display: flex;
   border-bottom: 1px solid #81ffff;
   justify-content: space-between;
@@ -255,7 +252,7 @@ select:hover {
   margin-bottom: 20px;
 }
 
-.toursHead__button button {
+.tours-head-button button {
   font-size: 1.3rem;
   padding: 5px 10px 0;
   width: 130px;
@@ -263,24 +260,25 @@ select:hover {
   border: 0;
   border-radius: 10px 10px 0 0;
 }
-.bottomPhotos {
+.bottom-photos {
   background-color: #299fca;
   color: #81ffff;
 }
-.bottomTours {
+.bottom-tours {
   background-color: #81ffff;
   color: #299fca;
   margin-left: 0;
 }
 
-.bottomTours:hover {
+.bottom-tours:hover,
+.bottom-photos:hover {
   background-color: #81ffffb7;
   color: #299fca;
 }
-.toursIcon td {
+.tours-icon td {
   padding-right: 20px;
 }
-.mapContainer {
+.map-container {
   background-position: center;
   width: 100%;
   height: 658px;
@@ -289,7 +287,7 @@ select:hover {
   background-repeat: no-repeat;
   position: relative;
 }
-.mapAfrica {
+.map-africa {
   position: absolute;
   width: 14.5%;
   top: 47.5%;
@@ -298,15 +296,15 @@ select:hover {
   background-size: contain;
 }
 
-.mapContainer h3,
-.mapContainer h2 {
+.map-container h3,
+.map-container h2 {
   margin-top: 10px;
   text-align: center;
   color: #299fca;
   font-weight: bold;
   font-size: 1.25rem;
 }
-.containerFoot {
+.container-foot {
   z-index: 30;
   display: flex;
   justify-content: space-around;
@@ -318,7 +316,7 @@ footer {
   width: 100%;
   background-color: #127fa6;
 }
-.iconFoot {
+.icon-foot {
   background-color: #3bb3de;
   width: 40px;
   height: 40px;
@@ -329,40 +327,40 @@ footer {
   color: #9bd8ee;
   font-size: large;
 }
-.iconFoot:hover {
+.icon-foot:hover {
   background-color: #0f6686;
 }
-.iconFoots {
+.icon-foots {
   display: flex;
 }
-.containerFoot input,
-.containerFoot textarea,
-.containerFoot select {
+.container-foot input,
+.container-foot textarea,
+.container-foot select {
   background-color: #0f6686;
   color: white;
   margin-left: 0;
   border: none;
 }
-.containerFoot input {
+.container-foot input {
   height: 35px;
 }
-.contactForm {
+.contact-form {
   display: flex;
   flex-direction: column;
 }
-.CopyrightFoot {
+.copyright-foot {
   display: flex;
   justify-content: center;
   padding: 20px;
 }
-.containerFoot input:hover,
-.containerFoot textarea:hover,
-.containerFoot select:hover {
+.container-foot input:hover,
+.container-foot textarea:hover,
+.container-foot select:hover {
   transition: all 0.2s linear;
   border-color: unset;
   background-color: #b7eafc;
 }
-.buttomFoot {
+.buttom-foot {
   padding: 5px;
   background-color: #d6e6ef;
   color: #1584ad;
@@ -372,31 +370,31 @@ footer {
   font-size: 1.25rem;
   margin-top: 10px;
 }
-.buttomFoot:hover {
+.buttom-foot:hover {
   background-color: #accde0;
 }
 /* inner========================================================== */
-.imgCollection__img {
+.img-collection__img {
   width: 100%;
   max-width: 250px;
 }
-.imgCollection {
+.img-collection {
   display: flex;
   width: 80%;
   color: #959595;
 }
-.imgCollection__block {
+.img-collection__block {
   margin: 20px;
 }
-.imgCollectionContainer {
+.img-collection-container {
   display: flex;
   font-size: 1.15rem;
 }
 
-.imgCollectionContainer h3 {
+.img-collection-container h3 {
   font-family: "Dancing Script", cursive;
 }
-.rightMenu {
+.right-menu {
   display: flex;
   flex-direction: column;
   margin: auto;
@@ -417,7 +415,7 @@ footer {
 li {
   list-style-type: none;
 }
-.imgCollection__bottom {
+.img-collection__bottom {
   font-size: 1.3rem;
   padding: 5px;
   width: 130px;
@@ -428,38 +426,38 @@ li {
   color: white;
 }
 
-.imgCollection__bottom:hover {
+.img-collection__bottom:hover {
   background-color: #299fca8e;
   color: #81ffff;
 }
 
 /* Africa================================================= */
 .africa,
-.contentAfrica {
+.content-africa {
   z-index: 40;
   position: absolute;
   top: 37%;
   left: 25%;
 }
-.contentAfrica {
+.content-africa {
   color: #b2aaaa;
   padding: 10px;
   width: 250px;
 }
 
-.contentAfrica .OurSpecial {
+.content-africa .our-special {
   flex-direction: column;
   overflow-y: scroll;
   font-size: 0.75rem;
   height: 220px;
 }
-.contentAfrica .SpecialInner {
+.content-africa .special-inner {
   width: 100%;
 }
-.contentAfrica .OurSpecial {
+.content-africa .our-special {
   min-width: 100px;
 }
-.contentAfrica__header {
+.content-africa-header {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -470,13 +468,13 @@ li {
 .africa__color {
   filter: sepia(50%);
 }
-.photo__slider__content {
+.photo-slider__content {
   margin: auto;
 }
-.photo__slider__content img {
+.photo-slider__content img {
   width: 30%;
 }
-.photo__slider {
+.photo-slider {
   display: none;
 }
 /* slaider================================================== */
@@ -574,17 +572,17 @@ li {
 .modal {
   display: none;
 }
-.modalBlock {
+.modal-block {
   display: none;
 }
 .modal--show {
   display: block;
 }
-.backButtonOpen {
+.back-button-open {
   background-color: #81ffff;
   color: #299fca;
 }
-.backButtonClouse {
+.back-button-clouse {
   background-color: #299fca;
   color: #81ffff;
 }

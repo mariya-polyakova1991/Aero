@@ -16,7 +16,7 @@ function currentSlide(n) {
 function showSlides(n) {
   let i;
   let slides = document.getElementsByClassName("item");
-  let dots = document.getElementsByClassName("slider-dots_item");
+  let dots = document.getElementsByClassName("slider-dots-item");
   if (n > slides.length) {
     slideIndex = 1;
   }

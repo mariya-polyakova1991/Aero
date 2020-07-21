@@ -2,7 +2,7 @@
   body {
     font-size: 18px;
   }
-  .mapAfrica {
+  .map-africa {
     top: 46%;
     left: 44%;
   }
@@ -13,7 +13,11 @@
     height: 1050px;
   }
   .africa,
-  .contentAfrica {
+  .content-africa {
+    top: 27%;
+    left: 12%;
+  }
+  .content-africa {
     top: 27%;
     left: 12%;
   }
@@ -28,11 +32,20 @@
     left: 55%;
     top: 15%;
   }
-  .OnlineBooking {
+  .online-booking {
     font-size: 1.5rem;
   }
-  .contentAfrica .OurSpecial {
+  .content-africa .our-special {
     font-size: 1rem;
+  }
+}
+
+@media (max-width: 900px) {
+  .menu-img {
+    display: none;
+  }
+  .menu-open {
+    display: block !important;
   }
 }
 @media (max-width: 810px) {
@@ -42,10 +55,8 @@
   .container-back {
     height: 1080px;
   }
-  .bannerAero {
-    top: 3%;
-    left: 60%;
-    width: 40%;
+  .banner-aero {
+    display: none;
   }
   .half-width {
     position: absolute;
@@ -54,171 +65,39 @@
     top: 10%;
     width: 40%;
   }
-  .mapContainer {
+  .map-container {
     height: 360px;
   }
-  .imgCollectionContainer {
+  .img-collection-container {
     flex-wrap: wrap;
   }
-  .imgCollection {
+  .img-collection {
     margin: auto;
   }
-  .rightMenu {
+  .right-menu {
     display: flex;
     flex-direction: row;
   }
   .africa,
-  .contentAfrica {
+  .content-africa {
     top: 15%;
     left: 12%;
     width: 57%;
     height: 66%;
   }
-  .contentAfrica .SpecialInner {
+
+  .content-africa .special-inner {
     width: 70%;
     height: 100%;
   }
-
-  /* <!--================menu burger =================--> */
-  /*
- * Made by Erik Terwan
- * 24th of November 2015
- * MIT License
- *
- *
- * If you are thinking of using this in
- * production code, beware of the browser
- * prefixes.
- */
-
-  .menu_nav {
-    display: none;
-  }
-
-  #menuToggle {
-    display: block;
-    position: absolute;
-    top: 10px;
-    left: 10px;
-
-    z-index: 20;
-
-    -webkit-user-select: none;
-    user-select: none;
-  }
-
-  #menuToggle a {
-    text-decoration: none;
-    color: #127ea5;
-
-    transition: color 0.3s ease;
-  }
-
-  #menuToggle a:hover {
-    color: white;
-  }
-
-  #menuToggle input {
-    display: block;
-    width: 40px;
-    height: 32px;
-    position: absolute;
-    top: -7px;
-    left: -5px;
-
-    cursor: pointer;
-
-    opacity: 0; /* hide this */
-    z-index: 2; /* and place it over the hamburger */
-
-    -webkit-touch-callout: none;
-  }
-
-  /*
-  * Just a quick hamburger
-  */
-  #menuToggle span {
-    display: block;
-    width: 33px;
-    height: 4px;
-    margin-bottom: 5px;
-    position: relative;
-    background: #127ea5;
-    border-radius: 3px;
-    z-index: 1;
-    transform-origin: 4px 0px;
-    transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1),
-      background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), opacity 0.55s ease;
-  }
-
-  #menuToggle span:first-child {
-    transform-origin: 0% 0%;
-  }
-
-  #menuToggle span:nth-last-child(2) {
-    transform-origin: 0% 100%;
-  }
-
-  /* 
-  * Transform all the slices of hamburger
-  * into a crossmark.
-  */
-  #menuToggle input:checked ~ span {
-    opacity: 1;
-    transform: rotate(45deg) translate(-2px, -1px);
-    background: #127ea5;
-  }
-
-  /*
-  * But let's hide the middle one.
-  */
-  #menuToggle input:checked ~ span:nth-last-child(3) {
-    opacity: 0;
-    transform: rotate(0deg) scale(0.2, 0.2);
-  }
-
-  /*
-  * Ohyeah and the last one should go the other direction
-  */
-  #menuToggle input:checked ~ span:nth-last-child(2) {
-    transform: rotate(-45deg) translate(0, -1px);
-  }
-
-  /*
-  * Make this absolute positioned
-  * at the top left of the screen
-  */
-  #menu {
-    position: absolute;
-    width: 100vw;
-    height: 100vh;
-    margin: -100px 0 0 -50px;
-    padding: 50px;
-    padding-top: 125px;
-
-    background: #add2e5;
-    list-style-type: none;
-    -webkit-font-smoothing: antialiased;
-    /* to stop flickering of text in safari */
-
-    transform-origin: 0% 0%;
-    transform: translate(-100%, 0);
-
-    transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
-  }
-
-  #menu li {
-    padding: 10px 0;
-    font-size: 22px;
-  }
-
-  /*
-  * And let's slide it in from the left
-  */
-  #menuToggle input:checked ~ ul {
-    transform: none;
+}
+@media (max-width: 720px) {
+  .img-collection-container {
+    flex-wrap: wrap;
+    justify-content: space-around;
   }
 }
+
 @media (max-width: 650px) {
   .container-back {
     height: 1390px;
@@ -226,7 +105,7 @@
   .half-width {
     width: 50%;
   }
-  .SpecialInner {
+  .special-inner {
     flex-wrap: wrap;
   }
   .container-back__inner {
@@ -236,20 +115,29 @@
   .cloudWhite__inner {
     top: 5%;
   }
-  .imgCollection {
+  .img-collection {
     flex-wrap: wrap;
   }
-  .contentAfrica .OurSpecial {
+  .content-africa .our-special {
     flex-direction: row;
   }
   .africa,
-  .contentAfrica {
+  .content-africa {
     height: 58%;
   }
-  .contentAfrica__header {
+  .content-africa-header {
     justify-content: right;
   }
 }
+@media (max-width: 580px) {
+  .img-collection {
+    flex-wrap: wrap;
+  }
+  .special-inner {
+    flex-wrap: wrap;
+  }
+}
+
 @media (max-width: 510px) {
   .container-back {
     height: 1300px;
@@ -258,30 +146,30 @@
     width: 80%;
     left: 10%;
   }
-  .logoImg {
+  .logo-img {
     top: 50%;
   }
-  .bannerAero {
+  .banner-aero {
     left: 15%;
     width: 65%;
     top: 1%;
   }
 
-  .logoImg {
+  .logo-img {
     display: none;
   }
-  .logoImgMedia {
+  .logo-img-media {
     display: block;
   }
   .container-back {
     background: none;
   }
-  .rightMenu {
+  .right-menu {
     display: flex;
     flex-direction: column;
   }
   .africa,
-  .contentAfrica {
+  .content-africa {
     height: 50%;
   }
 }
@@ -290,11 +178,11 @@
     width: 100%;
   }
   .africa,
-  .contentAfrica {
+  .content-africa {
     width: 80%;
     height: 70%;
   }
-  .contentAfrica {
+  .content-africa {
     height: 55%;
   }
 }

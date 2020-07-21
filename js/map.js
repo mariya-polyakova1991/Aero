@@ -2,7 +2,7 @@
  */
 const popup = document.querySelector(".modal");
 const openPopupButton = document.querySelector(".button-open");
-const closePopupButton = document.querySelector(".mapContainer");
+const closePopupButton = document.querySelector(".map-container");
 
 closePopupButton.addEventListener("click", function () {
   popup.classList.toggle("modal--show");

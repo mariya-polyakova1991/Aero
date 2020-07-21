@@ -19,18 +19,19 @@
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/media-queries.css" />
     <link rel="stylesheet" href="css/common.css" />
+    <link rel="stylesheet" href="css/menu.css" />
 
   </head>
   <body class="container">
     <!--================ Header Top Area Start =================-->
     <section class="header-top">
       <div class="container-back__inner">
-        <header class="collapse" id="navbarSupportedContent">
-          <div class="logoImg"><img src="Images/logo.png" /></div>
-          <div class="logoImgMedia"><img src="Images/logo1.png" /></div>
+        <header class="collapse" id="navbar-supported-content">
+          <div class="logo-img"><img src="Images/logo.png" /></div>
+          <div class="logo-imgMedia"><img src="Images/logo1.png" /></div>
 
-          <div class="menuImg">
-            <ul class="menu_nav">
+          <div class="menu-img">
+            <ul class="menu-nav">
               <li class="nav-item">
                 <a class="nav-link" href="index.html">Home</a>
               </li>
@@ -50,32 +51,11 @@
           </div>
 
           <!--================menu burger =================-->
-          <!--    Made by Erik Terwan    -->
-          <!--   24th of November 2015   -->
-          <!--        MIT License        -->
-          <nav role="navigation">
-            <div id="menuToggle" class="menuToggle">
-              <!--
-    A fake / hidden checkbox is used as click reciever,
-    so you can use the :checked selector on it.
-    -->
-              <input type="checkbox" />
-
-              <!--
-    Some spans to act as a hamburger.
-    
-    They are acting like a real hamburger,
-    not that McDonalds stuff.
-    -->
-              <span></span>
-              <span></span>
-              <span></span>
-
-              <!--
-    Too bad the menu has to be inside of the button
-    but hey, it's pure CSS magic.
-    -->
-              <ul id="menu">
+          
+          <div id="mySidenav" class="sidenav">
+            <ul id="menu">
+              <li class="nav-item">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a></li>
                 <li class="nav-item">
                   <a class="nav-link" href="index.html">Home</a>
                 </li>
@@ -92,17 +72,22 @@
                   <a class="nav-link" href="Reach.html">Reach us</a>
                 </li>
               </ul>
-            </div>
-          </nav>
+          </div>
+          <span class="menu-open" onclick="openNav()"><i class="fas fa-bars"></i></span>
+          
+          
+          
+              
+           
         </header>
-        <div class="cloudWhite__inner">
-          <!-- <img src="Images/cloud-21.png" /> -->
+        <main>
+        <div class="cloud-white__inner">
         </div>
 
-        <div class="cloudBlue">
-          <div class="OurSpecial SpecialInner">
-            <div class="OurSpecialInner">
-              <div class="OurSpecialImg"><img src="Images/Layer-19.png" /></div>
+        <div class="cloud-blue">
+          <div class="our-special special-inner">
+            <div class="our-special-inner">
+              <div class="our-special-img"><img src="Images/Layer-19.png" /></div>
               <h4>1914 translation</h4>
               <p>
                 But I must explain to you how all this<br />
@@ -110,11 +95,11 @@
               </p>
 
               <span class="price">700$</span>
-              <button class="bottomSub">Read more</button>
+              <button class="bottom-sub" title="click on me">Read more</button>
 
             </div>
-            <div class="OurSpecialInner">
-              <div class="OurSpecialImg">
+            <div class="our-special-inner">
+              <div class="our-special-img">
                 <img src="Images/Layer-19-copy.png" />
               </div>
               <h4>1914 translation</h4>
@@ -123,11 +108,11 @@
                 mistaken idea of denouncing pleasure
               </p>
               <span class="price">700$</span>
-              <button class="bottomSub">Read more</button>
+              <button class="bottom-sub" title="click on me">Read more</button>
 
             </div>
-            <div class="OurSpecialInner">
-              <div class="OurSpecialImg"><img src="Images/Layer-19.png" /></div>
+            <div class="our-special-inner">
+              <div class="our-special-img"><img src="Images/Layer-19.png" /></div>
               <h4>1914 translation</h4>
               <p>
                 But I must explain to you how all this<br />
@@ -135,7 +120,7 @@
               </p>
 
               <span class="price">700$</span>
-              <button class="bottomSub">Read more</button>
+              <button class="bottom-sub" title="click on me">Read more</button>
 
             </div>
           </div>
@@ -146,69 +131,69 @@
       </div>
     </section>
 
-    <div class="imgCollectionContainer">
-     <div class="imgCollection">
-       <div class="imgCollection1">
-       <div class="imgCollection__block">
-       <div class="imgCollection__img">
+    <div class="img-collection-container">
+     <div class="img-collection">
+       <div>
+       <div class="img-collection__block">
+       <div class="img-collection__img">
          <img src="Images/Layer-41.png">
        </div>
        <h3>Lorem Ipsum imple</h3>
        <p>Lorem Ipsum is simply dummy text 
         of the printing and typesetting  ansd industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
-        <button class="imgCollection__bottom">Read more</button>
+        <button class="img-collection__bottom">Read more</button>
        </div>
-       <div class="imgCollection__block">
-        <div class="imgCollection__img">
+       <div class="img-collection__block">
+        <div class="img-collection__img">
           <img src="Images/Layer-41.png">
         </div>
         <h3>Lorem Ipsum imple</h3>
         <p>Lorem Ipsum is simply dummy text 
          of the printing and typesetting  ansd industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
-         <button class="imgCollection__bottom">Read more</button>
+         <button class="img-collection__bottom">Read more</button>
         </div></div>
-       <div class="imgCollection1">
+       <div>
 
-        <div class="imgCollection__block">
-          <div class="imgCollection__img">
+        <div class="img-collection__block">
+          <div class="img-collection__img">
             <img src="Images/Layer-41.png">
           </div>
           <h3>Lorem Ipsum imple</h3>
           <p>Lorem Ipsum is simply dummy text 
            of the printing and typesetting  ansd industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
-           <button class="imgCollection__bottom">Read more</button>
+           <button class="img-collection__bottom">Read more</button>
           </div>
 
-          <div class="imgCollection__block">
-            <div class="imgCollection__img">
+          <div class="img-collection__block">
+            <div class="img-collection__img">
               <img src="Images/Layer-41.png">
             </div>
             <h3>Lorem Ipsum imple</h3>
             <p>Lorem Ipsum is simply dummy text 
              of the printing and typesetting  ansd industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
-             <button class="imgCollection__bottom">Read more</button>
+             <button class="img-collection__bottom">Read more</button>
             </div></div>
-            <div class="imgCollection1">
-            <div class="imgCollection__block">
-              <div class="imgCollection__img">
+            <div >
+            <div class="img-collection__block">
+              <div class="img-collection__img">
                 <img src="Images/Layer-41.png">
               </div>
               <h3>Lorem Ipsum imple</h3>
               <p>Lorem Ipsum is simply dummy text 
                of the printing and typesetting  ansd industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
-               <button class="imgCollection__bottom">Read more</button>
+               <button class="img-collection__bottom">Read more</button>
               </div>
-              <div class="imgCollection__block">
-                <div class="imgCollection__img">
+              <div class="img-collection__block">
+                <div class="img-collection__img">
                   <img src="Images/Layer-41.png">
                 </div>
                 <h3>Lorem Ipsum imple</h3>
                 <p>Lorem Ipsum is simply dummy text 
                  of the printing and typesetting  ansd industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
-                 <button class="imgCollection__bottom">Read more</button>
+                 <button class="img-collection__bottom">Read more</button>
                 </div></div>
      </div>
-     <div class="rightMenu">
+     <div class="right-menu">
      <div class="destinations">
        <h4>Destinations</h4>
        <ul>
@@ -237,11 +222,11 @@
     </div>
 </div>
     </div>
-    <script src="/js/up-burger.js"></script>
-  </body>
+    </main>
+   
   <footer class="container">
-    <div class="containerFoot">
-      <div class="newsletter">
+    <div class="container-foot">
+      <div class="news-letter">
         <h3>News letter</h3>
         <input
           type="text"
@@ -249,17 +234,17 @@
           id="login-foot"
           placeholder="enter email address"
         />
-        <button class="buttomFoot">Subscribe</button>
+        <button class="buttom-foot">Subscribe</button>
 
         <h3>Social media</h3>
-        <div class="iconFoots">
-          <div class="iconFoot">
+        <div class="icon-foots">
+          <div class="icon-foot">
             <i class="fab fa-twitter"></i>
           </div>
-          <div class="iconFoot">
+          <div class="icon-foot">
             <i class="fab fa-facebook-f"></i>
           </div>
-          <div class="iconFoot">
+          <div class="icon-foot">
             <i class="fab fa-linkedin-in"></i>
           </div>
         </div>
@@ -276,7 +261,7 @@
         </p>
       </div>
 
-      <div class="contactForm">
+      <div class="contact-form">
         <h3>Contact form</h3>
         <input type="text" name="Name" id="name-foot" placeholder="Name" />
         <input
@@ -292,12 +277,16 @@
           rows="5"
           placeholder="Message"
         ></textarea>
-        <button class="buttomFoot">Submit</button>
+        <button class="buttom-foot">Submit</button>
       </div>
     </div>
-    <div class="CopyrightFoot">
+    <div class="copyright-foot">
       © Copyright 2013 cssauthor.com, All Rights Reserved Designed and Developed
       By cssauthor.com
     </div>
   </footer>
+  <script src="js/map.js"></script>
+    <script src="js/photo.js"></script>
+    <script src="js/menu.js"></script>
+</body>
 </html>
