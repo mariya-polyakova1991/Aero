@@ -88,8 +88,6 @@
               </div>
               <form
                 class="form-aero"
-                action="#"
-                method="post"
               >
                 <div>
                   <label for="login">Name:</label>
@@ -118,12 +116,14 @@
                     id="comment-field"
                     rows="3"
                   ></textarea>
-                </div></form>
-
+                </div>
                 <button class="bottom-sub" id="buttons-open">Submit</button>
                 <section class="modals" id="modals">
                   <div class="modals__content">
-                    <p id="comments-list"></p>
+                    <div id="comments-name"></div>
+                    <div id="comments-email"></div>
+                    <div id="comments-message"></div>
+
                     <button class="modals__button buttons-close" type="buttons">
                       Закрыть
                     </button>
